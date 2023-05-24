@@ -56,7 +56,7 @@ a {
     background: hsl(225, 100%, 98%);
     border-radius: 10px;
     width: 400px;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 .card .order-info .plan span {
@@ -120,4 +120,43 @@ a {
 .order-info .btn .cancel:hover {
     cursor: pointer;
     color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url('/images/pattern-background-mobile.svg');
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .card {
+        width: 300px;
+        height: 580px;
+        margin: 55px auto;
+    }
+
+    .card .img img {
+        width: 300px;
+    }
+
+    .card .order-info .details {
+        width: 100%;
+    }
+
+    .card .order-info .plan {
+        width: 100%;
+    }
+
+    .card .order-info .plan .block {
+        margin: 0;
+    }
+
+    .card .order-info .plan .link {
+        margin: 0;
+    }
+
+    .card .order-info .btn .thin button {
+        padding: 12px 10px;
+    }
 }
